@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5B5EFA7CA79BFECCC026E1D1 /* Pods_claos_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668445FC591292469D0749 /* Pods_claos_social.framework */; };
+		ABC66ECB1EC1F9A80029A7B9 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC66ECA1EC1F9A80029A7B9 /* FancyView.swift */; };
+		ABC66ECE1EC1FA650029A7B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC66ECD1EC1FA650029A7B9 /* Constants.swift */; };
+		ABC66ED01EC1FD4C0029A7B9 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC66ECF1EC1FD4C0029A7B9 /* RoundButton.swift */; };
+		ABC66ED21EC1FEE00029A7B9 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC66ED11EC1FEE00029A7B9 /* FancyField.swift */; };
+		ABC66ED41EC2000C0029A7B9 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC66ED31EC2000C0029A7B9 /* FancyButton.swift */; };
 		ABEAE31D1EBF5FEE00E38CF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEAE31C1EBF5FEE00E38CF5 /* AppDelegate.swift */; };
 		ABEAE31F1EBF5FEE00E38CF5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEAE31E1EBF5FEE00E38CF5 /* SignInVC.swift */; };
 		ABEAE3221EBF5FEE00E38CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEAE3201EBF5FEE00E38CF5 /* Main.storyboard */; };
@@ -19,6 +24,11 @@
 /* Begin PBXFileReference section */
 		39A7BA88779E3113B7EBB496 /* Pods-claos-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-claos-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-claos-social/Pods-claos-social.release.xcconfig"; sourceTree = "<group>"; };
 		9C668445FC591292469D0749 /* Pods_claos_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_claos_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC66ECA1EC1F9A80029A7B9 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		ABC66ECD1EC1FA650029A7B9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ABC66ECF1EC1FD4C0029A7B9 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		ABC66ED11EC1FEE00029A7B9 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		ABC66ED31EC2000C0029A7B9 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		ABEAE3191EBF5FEE00E38CF5 /* claos-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "claos-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEAE31C1EBF5FEE00E38CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABEAE31E1EBF5FEE00E38CF5 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -70,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				ABEAE31E1EBF5FEE00E38CF5 /* SignInVC.swift */,
+				ABC66ECA1EC1F9A80029A7B9 /* FancyView.swift */,
+				ABC66ECF1EC1FD4C0029A7B9 /* RoundButton.swift */,
+				ABC66ED11EC1FEE00029A7B9 /* FancyField.swift */,
+				ABC66ED31EC2000C0029A7B9 /* FancyButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -79,6 +93,14 @@
 			children = (
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		ABC66ECC1EC1FA4A0029A7B9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				ABC66ECD1EC1FA650029A7B9 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		ABEAE3101EBF5FEE00E38CF5 = {
@@ -102,6 +124,7 @@
 		ABEAE31B1EBF5FEE00E38CF5 /* claos-social */ = {
 			isa = PBXGroup;
 			children = (
+				ABC66ECC1EC1FA4A0029A7B9 /* Util */,
 				ABAD6BBB1EBF6917007C5566 /* Controller */,
 				ABAD6BBA1EBF6910007C5566 /* View */,
 				ABAD6BB91EBF690A007C5566 /* Model */,
@@ -240,8 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC66ED21EC1FEE00029A7B9 /* FancyField.swift in Sources */,
 				ABEAE31F1EBF5FEE00E38CF5 /* SignInVC.swift in Sources */,
+				ABC66ED01EC1FD4C0029A7B9 /* RoundButton.swift in Sources */,
+				ABC66ED41EC2000C0029A7B9 /* FancyButton.swift in Sources */,
 				ABEAE31D1EBF5FEE00E38CF5 /* AppDelegate.swift in Sources */,
+				ABC66ECB1EC1F9A80029A7B9 /* FancyView.swift in Sources */,
+				ABC66ECE1EC1FA650029A7B9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
