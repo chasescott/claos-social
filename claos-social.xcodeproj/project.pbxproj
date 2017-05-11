@@ -19,6 +19,7 @@
 		ABEAE3241EBF5FEE00E38CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABEAE3231EBF5FEE00E38CF5 /* Assets.xcassets */; };
 		ABEAE3271EBF5FEE00E38CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEAE3251EBF5FEE00E38CF5 /* LaunchScreen.storyboard */; };
 		ABEAE32F1EBF62EA00E38CF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABEAE32E1EBF62EA00E38CF5 /* GoogleService-Info.plist */; };
+		ABEFFAAD1EC4548A007C9230 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEFFAAC1EC4548A007C9230 /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		ABEAE3261EBF5FEE00E38CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABEAE3281EBF5FEE00E38CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABEAE32E1EBF62EA00E38CF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ABEFFAAC1EC4548A007C9230 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		E5455F2AD095647367B56CED /* Pods-claos-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-claos-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-claos-social/Pods-claos-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +81,6 @@
 		ABAD6BBA1EBF6910007C5566 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ABEAE31E1EBF5FEE00E38CF5 /* SignInVC.swift */,
 				ABC66ECA1EC1F9A80029A7B9 /* FancyView.swift */,
 				ABC66ECF1EC1FD4C0029A7B9 /* RoundButton.swift */,
 				ABC66ED11EC1FEE00029A7B9 /* FancyField.swift */,
@@ -91,6 +92,8 @@
 		ABAD6BBB1EBF6917007C5566 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ABEAE31E1EBF5FEE00E38CF5 /* SignInVC.swift */,
+				ABEFFAAC1EC4548A007C9230 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				ABEAE31F1EBF5FEE00E38CF5 /* SignInVC.swift in Sources */,
 				ABC66ED01EC1FD4C0029A7B9 /* RoundButton.swift in Sources */,
 				ABC66ED41EC2000C0029A7B9 /* FancyButton.swift in Sources */,
+				ABEFFAAD1EC4548A007C9230 /* FeedVC.swift in Sources */,
 				ABEAE31D1EBF5FEE00E38CF5 /* AppDelegate.swift in Sources */,
 				ABC66ECB1EC1F9A80029A7B9 /* FancyView.swift in Sources */,
 				ABC66ECE1EC1FA650029A7B9 /* Constants.swift in Sources */,

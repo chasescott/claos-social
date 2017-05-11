@@ -12,5 +12,6 @@ target 'claos-social' do
   pod 'Firebase/Storage'
   pod 'IQKeyboardManagerSwift'
   pod 'FBSDKLoginKit'
+  pod 'SwiftKeychainWrapper'
  
 end
