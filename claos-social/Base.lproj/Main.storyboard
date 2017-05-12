@@ -224,15 +224,15 @@
                                     <constraint firstAttribute="trailing" secondItem="fI1-cY-KGy" secondAttribute="trailing" constant="8" id="Z7H-bC-rS0"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="376" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fDp-MV-ih7">
-                                <rect key="frame" x="0.0" y="182" width="375" height="485"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="376" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fDp-MV-ih7">
+                                <rect key="frame" x="0.0" y="174" width="375" height="493"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="376" id="4UO-Gl-AIr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="376" id="4UO-Gl-AIr" customClass="PostCell" customModule="claos_social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="376"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4UO-Gl-AIr" id="6ID-xb-mP6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="375.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xP6-oU-BLN" customClass="FancyView" customModule="claos_social" customModuleProvider="target">
@@ -244,14 +244,14 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KZS-47-D56">
                                                                     <rect key="frame" x="0.0" y="0.0" width="333" height="60"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="ZTN-ZC-GHo">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="ZTN-ZC-GHo" customClass="CircleView" customModule="claos_social" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="60" id="pWB-3z-4rK"/>
                                                                                 <constraint firstAttribute="width" constant="60" id="yhc-sr-jpD"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-jG-kaM">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3I-jG-kaM">
                                                                             <rect key="frame" x="68" y="0.0" width="197" height="60"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                             <color key="textColor" red="0.48627450979999998" green="0.30196078430000001" blue="1" alpha="0.87" colorSpace="calibratedRGB"/>
@@ -267,11 +267,17 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="z80-2q-xjK">
-                                                                    <rect key="frame" x="0.0" y="68" width="333" height="170.5"/>
+                                                                    <rect key="frame" x="0.0" y="68" width="333" height="150"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="dDm-aa-Kjk"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="pJh-Gz-iJC">
-                                                                    <rect key="frame" x="0.0" y="246.5" width="333" height="76"/>
+                                                                    <rect key="frame" x="0.0" y="226" width="333" height="96.5"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="t2j-51-1wQ"/>
+                                                                    </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -307,6 +313,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="xP6-oU-BLN" firstAttribute="leading" secondItem="6ID-xb-mP6" secondAttribute="leading" constant="16" id="BeR-IG-eNQ"/>
                                                 <constraint firstAttribute="bottom" secondItem="xP6-oU-BLN" secondAttribute="bottom" constant="8" id="COL-wl-8eE"/>
@@ -314,6 +321,13 @@
                                                 <constraint firstAttribute="trailing" secondItem="xP6-oU-BLN" secondAttribute="trailing" constant="16" id="TOn-sp-9C7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="pJh-Gz-iJC" id="JZp-to-v28"/>
+                                            <outlet property="likesLbl" destination="MQY-C7-vRr" id="TCv-YJ-fCU"/>
+                                            <outlet property="postImg" destination="z80-2q-xjK" id="IF1-GE-PXt"/>
+                                            <outlet property="profileImg" destination="ZTN-ZC-GHo" id="dW4-X4-abv"/>
+                                            <outlet property="userNameLbl" destination="t3I-jG-kaM" id="y0J-YF-uAH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -329,10 +343,11 @@
                             <constraint firstItem="LEW-X5-JFc" firstAttribute="top" secondItem="fDp-MV-ih7" secondAttribute="bottom" id="cJv-tn-1Ly"/>
                             <constraint firstAttribute="trailing" secondItem="TiN-Yf-VgM" secondAttribute="trailing" constant="16" id="jOh-Yd-rac"/>
                             <constraint firstItem="fDp-MV-ih7" firstAttribute="leading" secondItem="2IA-r6-mCq" secondAttribute="leading" id="l99-Ha-Isa"/>
-                            <constraint firstItem="fDp-MV-ih7" firstAttribute="top" secondItem="TiN-Yf-VgM" secondAttribute="bottom" constant="16" id="r9R-Dt-ChW"/>
+                            <constraint firstItem="fDp-MV-ih7" firstAttribute="top" secondItem="TiN-Yf-VgM" secondAttribute="bottom" constant="8" id="r9R-Dt-ChW"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="fDp-MV-ih7" id="QrV-Yf-8X2"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="EK2-Qn-mKA"/>
                     </connections>
                 </viewController>

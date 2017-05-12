@@ -21,6 +21,7 @@
 		ABEAE32F1EBF62EA00E38CF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABEAE32E1EBF62EA00E38CF5 /* GoogleService-Info.plist */; };
 		ABEFFAAD1EC4548A007C9230 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEFFAAC1EC4548A007C9230 /* FeedVC.swift */; };
 		ABEFFAAF1EC4BB71007C9230 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEFFAAE1EC4BB71007C9230 /* CircleView.swift */; };
+		ABEFFAB11EC5F885007C9230 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEFFAB01EC5F885007C9230 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		ABEAE32E1EBF62EA00E38CF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABEFFAAC1EC4548A007C9230 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		ABEFFAAE1EC4BB71007C9230 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		ABEFFAB01EC5F885007C9230 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		E5455F2AD095647367B56CED /* Pods-claos-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-claos-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-claos-social/Pods-claos-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 				ABC66ED11EC1FEE00029A7B9 /* FancyField.swift */,
 				ABC66ED31EC2000C0029A7B9 /* FancyButton.swift */,
 				ABEFFAAE1EC4BB71007C9230 /* CircleView.swift */,
+				ABEFFAB01EC5F885007C9230 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				ABEAE31D1EBF5FEE00E38CF5 /* AppDelegate.swift in Sources */,
 				ABC66ECB1EC1F9A80029A7B9 /* FancyView.swift in Sources */,
 				ABC66ECE1EC1FA650029A7B9 /* Constants.swift in Sources */,
+				ABEFFAB11EC5F885007C9230 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
