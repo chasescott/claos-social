@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B5EFA7CA79BFECCC026E1D1 /* Pods_claos_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C668445FC591292469D0749 /* Pods_claos_social.framework */; };
+		AB591A4B1ECB03C7001BD6B3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB591A4A1ECB03C7001BD6B3 /* DataService.swift */; };
 		ABC66ECB1EC1F9A80029A7B9 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC66ECA1EC1F9A80029A7B9 /* FancyView.swift */; };
 		ABC66ECE1EC1FA650029A7B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC66ECD1EC1FA650029A7B9 /* Constants.swift */; };
 		ABC66ED01EC1FD4C0029A7B9 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC66ECF1EC1FD4C0029A7B9 /* RoundButton.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		39A7BA88779E3113B7EBB496 /* Pods-claos-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-claos-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-claos-social/Pods-claos-social.release.xcconfig"; sourceTree = "<group>"; };
 		9C668445FC591292469D0749 /* Pods_claos_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_claos_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB591A4A1ECB03C7001BD6B3 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		ABC66ECA1EC1F9A80029A7B9 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		ABC66ECD1EC1FA650029A7B9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ABC66ECF1EC1FD4C0029A7B9 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 				39A7BA88779E3113B7EBB496 /* Pods-claos-social.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB591A491ECB03B4001BD6B3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB591A4A1ECB03C7001BD6B3 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		ABAD6BB91EBF690A007C5566 /* Model */ = {
@@ -133,6 +143,7 @@
 		ABEAE31B1EBF5FEE00E38CF5 /* claos-social */ = {
 			isa = PBXGroup;
 			children = (
+				AB591A491ECB03B4001BD6B3 /* Services */,
 				ABC66ECC1EC1FA4A0029A7B9 /* Util */,
 				ABAD6BBB1EBF6917007C5566 /* Controller */,
 				ABAD6BBA1EBF6910007C5566 /* View */,
@@ -277,6 +288,7 @@
 				ABEAE31F1EBF5FEE00E38CF5 /* SignInVC.swift in Sources */,
 				ABC66ED01EC1FD4C0029A7B9 /* RoundButton.swift in Sources */,
 				ABC66ED41EC2000C0029A7B9 /* FancyButton.swift in Sources */,
+				AB591A4B1ECB03C7001BD6B3 /* DataService.swift in Sources */,
 				ABEFFAAD1EC4548A007C9230 /* FeedVC.swift in Sources */,
 				ABEAE31D1EBF5FEE00E38CF5 /* AppDelegate.swift in Sources */,
 				ABC66ECB1EC1F9A80029A7B9 /* FancyView.swift in Sources */,
