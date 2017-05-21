@@ -183,13 +183,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fI1-cY-KGy">
                                         <rect key="frame" x="8" y="8" width="327" height="59"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="RGO-KT-IkG" customClass="CircleView" customModule="claos_social" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="RGO-KT-IkG" customClass="CircleView" customModule="claos_social" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
                                                 <color key="backgroundColor" red="0.76078431369999999" green="0.094117647060000004" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="59" id="FJR-1e-L3h"/>
                                                     <constraint firstAttribute="width" constant="59" id="ySN-xe-2GW"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="AFv-5s-hpg" appends="YES" id="UOe-Jx-b8w"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption..." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPr-Zq-KD2" customClass="FancyField" customModule="claos_social" customModuleProvider="target">
                                                 <rect key="frame" x="75" y="0.0" width="177" height="59"/>
@@ -341,6 +345,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="RGO-KT-IkG" id="jm4-F7-Ngu"/>
                         <outlet property="tableView" destination="fDp-MV-ih7" id="QrV-Yf-8X2"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="EK2-Qn-mKA"/>
                     </connections>
@@ -349,6 +354,11 @@
                 <tapGestureRecognizer id="DoS-bj-xau">
                     <connections>
                         <action selector="signOutTapped:" destination="oT2-t9-WKv" id="ayQ-4b-Wqx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="AFv-5s-hpg">
+                    <connections>
+                        <action selector="addImageTapped:" destination="oT2-t9-WKv" id="iRg-T4-g4q"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
