@@ -10,7 +10,7 @@ import Foundation
 
 class Post {
     private var _caption: String!
-    private var _imageURL: String!
+    private var _imageUrl: String!
     private var _likes: Int!
     private var _postKey: String!
     
@@ -18,8 +18,8 @@ class Post {
         return _caption
     }
     
-    var imageURL: String {
-        return _imageURL
+    var imageUrl: String {
+        return _imageUrl
     }
     
     var likes: Int {
@@ -32,7 +32,7 @@ class Post {
     
     init(caption: String, imageURL: String, likes: Int) {
         self._caption = caption
-        self._imageURL = imageURL
+        self._imageUrl = imageUrl
         self._likes = likes
     }
     
@@ -43,8 +43,8 @@ class Post {
             self._caption = caption
         }
         
-        if let imageURL = postData["imageURL"] as? String {
-            self._imageURL = imageURL
+        if let imageUrl = postData["imageURL"] as? String {
+            self._imageUrl = imageUrl
         }
         
         if let likes = postData["likes"] as? Int {
