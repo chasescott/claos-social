@@ -34,7 +34,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         //listener for instant changes in the firebase database usese a for loop to append each post
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
             
-            self.posts = []
+            self.posts = [] //clears the posts array each time that it is loaded to prevent duplicate posts.
             
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshot {
@@ -105,8 +105,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             print("CHASE: An image must be selected")
             return
         }
-        if let imgData = UIImageJPEGRepresentation(img, 0.2) //get and compress img data
-        {
+        //get and compress img data
+        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
             
             let imgUid = NSUUID().uuidString
             let metadata = FIRStorageMetadata()
@@ -118,9 +118,31 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 } else {
                     print("CHASE: Successfully uploaded image to Firebase Storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
+                    if let url = downloadURL {
+                       self.postToFirebase(imgUrl: url)
+                    }
+                    
                 }
             }
         }
+    }
+    
+    
+    func postToFirebase(imgUrl: String) {
+        let post: Dictionary<String,AnyObject> = [
+            "caption": captionField.text! as AnyObject,
+            "imageURL": imgUrl as AnyObject,
+            "likes": 0 as AnyObject
+        ]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        captionField.text = ""
+        imageSelected = false
+        imageAdd.image = UIImage(named: "add-image")
+        
+        tableView.reloadData()
     }
     
     
